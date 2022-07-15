@@ -6,7 +6,7 @@ Repository for the final bootcamp project.
 Based on the features in the NEO_V2 - Excel dataset the team will determine what is the most likely reason something is hazardous. 
 
 ## Dataset: 
-NEO_V2 - Excel 
+NEO_V2.csv - Excel 
 
 ## Machine Learning Model: 
 The team will train and test hazardous data using a classification model.
