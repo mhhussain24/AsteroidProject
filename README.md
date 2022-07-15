@@ -12,7 +12,7 @@ NEO_V2.csv - Excel
 The team will train and test hazardous data using a classification model.
 
 ## Technology Used for the Project: 
-	- Python - Sklearn, Pandas
+	- Python - Sklearn, Pandas, Tensorflow
 	- PostGres - database 
 	- Tableau - visulization
 	_ *HTML/CSS - will review addition datasets, such as 		   D3 - Celestial to display interesting visuals of 		   asteroids. 
