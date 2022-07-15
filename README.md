@@ -3,7 +3,7 @@ Repository for the final bootcamp project.
 
 
 ## Project Overview: 
-Based on the features in the NEO_V2 - Excel dataset the team will determine what is the most likely reason something is hazardous. 
+Based on the features in the NEO_V2.csv - Excel dataset the team will determine what is the most likely reason something is hazardous. 
 
 ## Dataset: 
 NEO_V2.csv - Excel 
