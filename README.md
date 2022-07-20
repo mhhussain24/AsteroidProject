@@ -28,6 +28,39 @@ The team will train and test hazardous data using a classification model.
 	- Circle: Kathleen Yager (SQL)
 	- X: Megan Harping and Frank Salvo (what tools to use)
 
+
+## Visualization Outline:
+
+### The story we want to tell. 
+	 1. Using various predictive models we are showing what factors in our dataset most impact hazardous objects.
+		
+#### Models used: 
+		- Decision Tree
+		- Neuro Network 
+		- Linear Regression
+
+		The Decision Tree and Neuro Network models indicate an imbalance in the data. This is an indicator that we need to balance the model. 
+
+		Visuals included in our machine learning are based in plotly. 
+
+	2. We will describe the parameters of the data in the dataset.
+
+	3. Create a visualization using Google Docs we will create a presentation that will include images of asteroids and explanation and images of 	   our work. 
+
+## Team Goal:
+	Work with team members to sort and analyze asteroid data to find what factors lead to deciding whether or not asteroids are hazardous or 	nonhazardous. We hope to present our data using our knowledge of different databases to create visualizations, machine learning models, and 	linear regression.
+	
+
+## Top Five Takeaways of the Project: 
+	1. Manipulating an already existing dataset to tell our story. 
+	2. Applying skills learned in class to a NASSA dataset, using our knowledge of different concepts and databases to present 
+	3. 
+	4. 
+	5. 	 
+
+
+
+# NOTES: 
 ## Work Process
 	
 	July 16, 2022
