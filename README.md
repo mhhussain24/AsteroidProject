@@ -45,18 +45,18 @@ The team will train and test hazardous data using a classification model.
 
 	2. We will describe the parameters of the data in the dataset.
 
-	3. Create a visualization using Google Docs we will create a presentation that will include images of asteroids and explanation and images of 	   our work. 
+	3. Creating visualization in Tableau, presenting using Google Docs we will create a presentation that will include images of asteroids and 		   explanation and images of our work. 
 
 ## Team Goal:
 	Work with team members to sort and analyze asteroid data to find what factors lead to deciding whether or not asteroids are hazardous or 	nonhazardous. We hope to present our data using our knowledge of different databases to create visualizations, machine learning models, and 	linear regression.
 	
 
 ## Top Five Takeaways of the Project: 
-	1. Manipulating an already existing dataset to tell our story. 
-	2. Applying skills learned in class to a NASSA dataset, using our knowledge of different concepts and databases to present 
-	3. 
-	4. 
-	5. 	 
+	1. Considering multiple factors to determine if an asteroid is hazardous or not. 
+	2. Comparing factors to determine which impact hazardous classification. 
+	3. Visualizing hazardous objects in relation to earth. 
+	4. How to interpret data that is scaled for accuracy. 
+	5. Analyzing summary statistics to aid in interpretation of data.  
 
 
 
