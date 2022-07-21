@@ -56,40 +56,49 @@ The team will train and test hazardous data using a classification model.
 	2. Comparing factors to determine which impact hazardous classification. 
 	3. Visualizing hazardous objects in relation to earth. 
 	4. How to interpret data that is scaled for accuracy. 
-	5. Analyzing summary statistics to aid in interpretation of data.  
+	5. Analyzing summary statistics to aid in interpretation of data. 
+ 
 
+## Defining Hazardous Asteroids:
+ 
+	According to NASA, Center for Near Earth Obeject Studies, near earth objects are defined as: 
+		"In terms of orbital elements, NEOs are asteroids and comets with perihelion distance q less than 1.3 au . Near-Earth Comets (NECs) are 			further restricted to include only short-period comets (i.e., orbital period P less than 200 years). The vast majority of NEOs are 				asteroids, 	referred to as Near-Earth Asteroids (NEAs). NEAs are divided into groups (Atira, Aten, Apollo and Amor) according to their 			perihelion 	distance (q), aphelion distance (Q) and their semi-major axes (a).
 
+		Potentially Hazardous Asteroids (PHAs) are currently defined based on parameters that measure the asteroid's potential to make threatening 		close approaches to the Earth. Specifically, all asteroids with an Earth Minimum Orbit Intersection Distance (MOID) of 0.05 au or less and 		an absolute magnitude (H) of 22.0 or less are considered PHAs. In other words, asteroids that can't get any closer to the Earth (i.e., 			MOID) than 0.05 au (roughly 7,480,000 km or 4,650,000 mi) or are smaller than about 140 m (~500 ft) in diameter (i.e., H = 22.0 with 			assumed albedo of 14%) are not considered PHAs.
+																										~https://cneos.jpl.nasa.gov/about/neo_groups.html
 
 # NOTES: 
+
 ## Work Process
 	
-	July 16, 2022
+In reviewing the data in NEO_V2.csv we discovered multiple entries for some ID's. Our review showed values in the relative_velocity and miss_distance columns vary causing multiple entries for id's. Values in other columns remain constant.
 
-		- Maryam and Kathleen reviewed NEO_V2.csv and discovered multiple entries for some ID's. Review showed data in the lative_velocity and 			miss_distance columns was different with all other columns remaining constant.
+Using Pandas, we separated columns into two dataframes: 
+	-'df_new' includes two columns:
+		1. relative_velocity
+		2. miss_distance
 
-		Using Pandas, we separated columns into two dataframes: 
-			- 'df_new' includes two columns:
-				1. relative_velocity
-				2. miss_distance
+	- 'no_duplicates_df' includes: 
+	All columns except relative_velocity and miss_distance
 
-			- 'no_duplicates_df' includes: 
-				All columns except relative_velocity and miss_distance
-
-		after splitting the data and removing duplicates from 'no_duplicates_df', we created CSV files. 
+	after splitting the data and removing duplicates from 'no_duplicates_df', we created CSV files. 
 
 
-		With CSV files created, we created two tables in PostGres:
+	With CSV files created, we created two tables in PostGres:
 
-			1. vel_miss 
-			2. no_duplicates
+		1. vel_miss 
+		2. no_duplicates
 		
-		Using a left-join, we created a new table called 'combined_tables'.
+	Using a left-join, we created a new table called 'combined_tables'.
 
 See image below of the first 20 rows of the SQL file. 
 
 ![combined_table](https://github.com/mhhussain24/AsteroidProject/blob/KY_asteriods/Resources/PostGres_left_join.png)
 
-We attempted to export combined_table to a csv and received a 'columns error' message. We checked in with the balance of the group for assistance.  				
+
+The image below shows a groupby statement created in PostGres that indicates repeat entries by id. 
+
+![Groupby_ID]("C:\Users\kathl\OneDrive\Desktop\Bootcamp_Classwork\Projects\Module_20_Final_Project\AsteroidProject\Resources\Group_by.png")  				
 			
 
 
