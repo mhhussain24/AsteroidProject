@@ -1,4 +1,4 @@
-# AsteroidProject
+# Asteroid Project
 Repository for the final bootcamp project.
 
 
