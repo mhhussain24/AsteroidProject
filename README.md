@@ -98,7 +98,7 @@ See image below of the first 20 rows of the SQL file.
 
 The image below shows a groupby statement created in PostGres that indicates repeat entries by id. 
 
-![Groupby_ID]("C:\Users\kathl\OneDrive\Desktop\Bootcamp_Classwork\Projects\Module_20_Final_Project\AsteroidProject\Resources\Group_by.png")  				
+![Groupby_ID](https://github.com/mhhussain24/AsteroidProject/blob/main/Resources/Group_by.png)  				
 			
 
 
