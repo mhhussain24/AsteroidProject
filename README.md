@@ -62,10 +62,10 @@ The team will train and test hazardous data using a classification model.
 ## Defining Hazardous Asteroids:
  
 	According to NASA, Center for Near Earth Obeject Studies, near earth objects are defined as: 
-		"In terms of orbital elements, NEOs are asteroids and comets with perihelion distance q less than 1.3 au . Near-Earth Comets (NECs) are 			further restricted to include only short-period comets (i.e., orbital period P less than 200 years). The vast majority of NEOs are 				asteroids, 	referred to as Near-Earth Asteroids (NEAs). NEAs are divided into groups (Atira, Aten, Apollo and Amor) according to their 			perihelion 	distance (q), aphelion distance (Q) and their semi-major axes (a).
+		"In terms of orbital elements, NEOs are asteroids and comets with perihelion distance q less than 1.3 au . Near-Earth Comets (NECs) are 			further restricted to include only short-period comets (i.e., orbital period P less than 200 years). The vast majority of NEOs are 				asteroids, referred to as Near-Earth Asteroids (NEAs). NEAs are divided into groups (Atira, Aten, Apollo and Amor) according to their 				perihelion distance (q), aphelion distance (Q) and their semi-major axes (a).
 
-		Potentially Hazardous Asteroids (PHAs) are currently defined based on parameters that measure the asteroid's potential to make threatening 		close approaches to the Earth. Specifically, all asteroids with an Earth Minimum Orbit Intersection Distance (MOID) of 0.05 au or less and 		an absolute magnitude (H) of 22.0 or less are considered PHAs. In other words, asteroids that can't get any closer to the Earth (i.e., 			MOID) than 0.05 au (roughly 7,480,000 km or 4,650,000 mi) or are smaller than about 140 m (~500 ft) in diameter (i.e., H = 22.0 with 			assumed albedo of 14%) are not considered PHAs.
-																										~https://cneos.jpl.nasa.gov/about/neo_groups.html
+		Potentially Hazardous Asteroids (PHAs) are currently defined based on parameters that measure the asteroid's potential to make threatening 			close approaches to the Earth. Specifically, all asteroids with an Earth Minimum Orbit Intersection Distance (MOID) of 0.05 au or less and 			an absolute magnitude (H) of 22.0 or less are considered PHAs. In other words, asteroids that can't get any closer to the Earth (i.e., 				MOID) than 0.05 au (roughly 7,480,000 km or 4,650,000 mi) or are smaller than about 140 m (~500 ft) in diameter (i.e., H = 22.0 with 				assumed albedo of 14%) are not considered PHAs.
+									~https://cneos.jpl.nasa.gov/about/neo_groups.html
 
 # NOTES: 
 
