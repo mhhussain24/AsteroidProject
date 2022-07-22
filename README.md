@@ -36,10 +36,10 @@ The team will train and test hazardous data using a classification model.
 		
 #### Models used: 
 		- Decision Tree
-		- Neuro Network 
+		- Neural Network 
 		- Linear Regression
 
-		The Decision Tree and Neuro Network models indicate an imbalance in the data. This is an indicator that we need to balance the model. 
+		The Decision Tree and Neural Network models indicate an imbalance in the data. This is an indicator that we need to rebalance the model. 
 
 		Visuals included in our machine learning are based in plotly. 
 
