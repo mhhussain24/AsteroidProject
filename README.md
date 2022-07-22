@@ -48,7 +48,7 @@ The team will train and test hazardous data using a classification model.
 	3. Creating visualization in Tableau, presenting using Google Docs we will create a presentation that will include images of asteroids and 		   explanation and images of our work. 
 
 ## Team Goal:
-	Work with team members to sort and analyze asteroid data to find what factors lead to deciding whether or not asteroids are hazardous or 	nonhazardous. We hope to present our data using our knowledge of different databases to create visualizations, machine learning models, and 	linear regression.
+	Work with team members to sort and analyze asteroid data to find what factors lead to deciding whether or not asteroids are hazardous or nonhazardous. We hope 		to present our data using our knowledge of different databases to create visualizations, machine learning models, and linear regression.
 	
 
 ## Top Five Takeaways of the Project: 
