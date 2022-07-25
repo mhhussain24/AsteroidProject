@@ -36,10 +36,9 @@ The team will train and test hazardous data using a classification model.
 		
 #### Models used: 
 		- Decision Tree
-		- Neural Network 
-		- Linear Regression
+		- Logisic Regression
 
-		The Decision Tree and Neural Network models indicate an imbalance in the data. This is an indicator that we need to rebalance the model. 
+		We decided to use decision tree and logisitic regression models because our data had a binary classification.  The intial data was imbalanced, seeing many more values for 'non-hazardous' than for 'hazardous'.  We resampled the data using SMOTEENN combination sampling.
 
 		Visuals included in our machine learning are based in plotly. 
 
