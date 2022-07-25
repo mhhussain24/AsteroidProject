@@ -13,12 +13,12 @@ We believe this data to be reliable as it is from NASA. With 90K rows of data we
 
 ---
 ## Machine Learning Model: 
-The team train and test near Earth object (NEO) data, using binary classification models to predict whether an object is hazardous to the Earth, or not.  We will be analyzing and comparing our results from a decision tree model and a logistic regression model.
+The team analyzed near Earth object (NEO) data, using binary classification models to predict whether an object is hazardous to the Earth, or not.  We will be analyzing and comparing our results from a decision tree model and a logistic regression model.
 
 #### Preliminary data preprocessing:
-1. Import and read source data
+1. Import and read the source data.
 2. Display an overview of the dataset and confirm no null values in the dataset.
-3. Determine which features to keep and which to drop from the dataset.  We dropped redundant column 'id', and two columns with one unique value each, 'orbiting_body' (all values = 'Earth') and 'sentry_object' (all values = 'False')
+3. Determine which features to keep and which to drop from the dataset.  We dropped redundant column 'id', and two columns with one unique value each, 'orbiting_body' (all values = 'Earth') and 'sentry_object' (all values = 'False').
 4. We used AutoViz dataset auto-visualization library to provide a preliminary look at our source data, once preprocessed.
 
 #### Preliminary feature engineering and feature selection:
