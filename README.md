@@ -48,7 +48,7 @@ The benefits of the models selected is that they are well suited to categorical 
 ---
 
 ## Technology Used for the Project: 
-	- Python - Sklearn, Pandas, Tensorflow
+	- Python - Sklearn, Pandas, Tensorflow, Numpy, Matplotlib, Imblearn, Keras, Collections, AutoViz, Datetime
 	- PostGres - database 
 	- Tableau - visulization
 	_ *HTML/CSS - will review addition datasets, such as D3 - Celestial to display interesting visuals of asteroids. 
