@@ -11,8 +11,41 @@ NEO_V2.csv - Excel
 ## Reason for Dataset: 
 We believe this data to be reliable as it is from NASA. With 90K rows of data we felt it provided enough data to answer our question. The dataset appeared to be a good fit for machine learning component of the project. Our thinking is the dataset will work well for visualization. 
 
+---
 ## Machine Learning Model: 
-The team will train and test hazardous data using a classification model.
+The team train and test near Earth object (NEO) data, using binary classification models to predict whether an object is hazardous to the Earth, or not.  We will be analyzing and comparing our results from a decision tree model and a logistic regression model.
+
+#### Preliminary data preprocessing:
+1. Import and read source data
+2. Display an overview of the dataset and confirm no null values in the dataset.
+3. Determine which features to keep and which to drop from the dataset.  We dropped redundant column 'id', and two columns with one unique value each, 'orbiting_body' (all values = 'Earth') and 'sentry_object' (all values = 'False')
+4. We used AutoViz dataset auto-visualization library to provide a preliminary look at our source data, once preprocessed.
+
+#### Preliminary feature engineering and feature selection:
+1. Define the features set ('est_diameter_min', 'est_diameter_max', 'relative_velocity', 'miss_distance', and 'absolute_magnitude').  We have 5 independent variables in our dataset.
+2. Define the target set ('hazardous').  This is the dependent variable, the binary classification of our dataset.  This is the value that we are trying to predict.
+
+#### Splitting the data into training and testing sets:
+1. Split the preprocessed data into a training and testing dataset.
+  ```python
+    X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=420, train_size=0.80)
+  ```
+2. Check the balance of the dataset.  In our case, the data was imbalanced and overfitting.
+3. Rebalance the dataset.  We used SMOTEENN combination sampling.
+  ```python
+    smote_enn = SMOTEENN(random_state=0)
+    X_resampled, y_resampled = smote_enn.fit_resample(X, y)
+  ```
+4. Create a StandardScaler instance; fit and scale the data.
+  ```python
+    scaler = StandardScaler()
+    X_scaler = scaler.fit(X_train)
+    X_train_scaled = X_scaler.transform(X_train)
+    X_test_scaled = X_scaler.transform(X_test)
+  ```
+The benefits of the models selected is that they are well suited to categorical output.  In our supervised machine learning we happen to have a binary classifier, 'hazardous' or 'non-hazardous', which can also be represented as 'True'('hazardous') and 'False'('non-hazardous').  One potential downfall of our model will be overfitting our data, although we resampled the data to try and resolve the issue.  Another downfall our models may face is with the limited number of features, 5 in this case.
+
+---
 
 ## Technology Used for the Project: 
 	- Python - Sklearn, Pandas, Tensorflow
