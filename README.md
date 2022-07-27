@@ -114,7 +114,9 @@ Using Pandas, we separated columns into two dataframes:
 	- 'no_duplicates_df' includes: 
 	All columns except relative_velocity and miss_distance
 
-	after splitting the data and removing duplicates from 'no_duplicates_df', we created CSV files. 
+after splitting the data and removing duplicates from 'no_duplicates_df', we created CSV files to be used in our SQL database.
+
+Our description of the data includes summary statistics on the "miss_df" dataframe. Using a loc method on the "miss_df" dataframe, we isolated the true and false values in the hazardous column. This allowed us to create boxplots on other features in the dataset.  
 
 ## PostGres (SQL):
 	With CSV files created, we created two tables in PostGres:
