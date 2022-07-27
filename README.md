@@ -11,7 +11,65 @@ NEO_V2.csv - Excel
 ## Reason for Dataset: 
 We believe this data to be reliable as it is from NASA. With 90K rows of data we felt it provided enough data to answer our question. The dataset appeared to be a good fit for machine learning component of the project. Our thinking is the dataset will work well for visualization. 
 
----
+
+## Technology Used for the Project: 
+	- Python - Sklearn, Pandas, Tensorflow, Numpy, Matplotlib, Imblearn, Keras, Collections, AutoViz, Datetime
+	- PostGres - database 
+	- Tableau - visulization
+	_ *HTML/CSS - will review addition datasets, such as D3 - Celestial to display interesting visuals of asteroids. 
+
+
+## Team Members and Roles: 
+
+	- Triangle: Christopher Madden (Machine Learning)  
+ 	- Square: Maryam Hussain and Frank Salvo (managing repository)
+	- Circle: Kathleen Yager (SQL)
+	- X: Megan Harping and Frank Salvo (what tools to use)
+
+
+## Visualization Outline:
+
+### The story we want to tell. 
+	 1. Using various predictive models we are showing what factors in our dataset most impact hazardous objects.
+		
+#### Models used:
+		- Random Forest Classifier 
+		- Support Vector Machine
+		- Logisic Regression
+		- Decision Tree Classification
+		- Gradient Boosted Tree
+		- Voting Classifier (used to compare all five models at the same time)
+
+Models chosen support classification machine learning.  The intial data was imbalanced, seeing many more values for 'non-hazardous' than for 'hazardous'.  We resampled the data using SMOTEENN combination sampling.
+
+Visuals included in our machine learning are based in plotly. 
+
+	2. We will describe the parameters of the data in the dataset.
+
+	3. Creating visualization in Tableau, presenting using Google Docs we will create a presentation that will include images of asteroids and 		   explanation and images of our work. 
+
+## Team Goal:
+Work with team members to sort and analyze asteroid data to find what factors lead to deciding whether or not asteroids are hazardous or nonhazardous. We hope 	to present our data using our knowledge of different databases to create visualizations, machine learning models, and linear regression.
+	
+
+## Top Five Takeaways of the Project: 
+	1. Considering multiple factors to determine if an asteroid is hazardous or not. 
+	2. Comparing factors to determine which impact hazardous classification. 
+	3. Visualizing hazardous objects in relation to earth. 
+	4. How to interpret data that is scaled for accuracy. 
+	5. Analyzing summary statistics to aid in interpretation of data. 
+ 
+
+## Defining Hazardous Asteroids:
+ 
+	According to NASA, Center for Near Earth Obeject Studies, near earth objects are defined as: 
+		"In terms of orbital elements, NEOs are asteroids and comets with perihelion distance q less than 1.3 au . Near-Earth Comets (NECs) are 			further restricted to include only short-period comets (i.e., orbital period P less than 200 years). The vast majority of NEOs are 				asteroids, referred to as Near-Earth Asteroids (NEAs). NEAs are divided into groups (Atira, Aten, Apollo and Amor) according to their 			perihelion distance (q), aphelion distance (Q) and their semi-major axes (a).
+
+		Potentially Hazardous Asteroids (PHAs) are currently defined based on parameters that measure the asteroid's potential to make threatening 		close approaches to the Earth. Specifically, all asteroids with an Earth Minimum Orbit Intersection Distance (MOID) of 0.05 au or less and 		an absolute magnitude (H) of 22.0 or less are considered PHAs. In other words, asteroids that can't get any closer to the Earth (i.e., 			MOID) than 0.05 au (roughly 7,480,000 km or 4,650,000 mi) or are smaller than about 140 m (~500 ft) in diameter (i.e., H = 22.0 with 			assumed albedo of 14%) are not considered PHAs.										~https://cneos.jpl.nasa.gov/about/neo_groups.html
+
+
+# WORK Process: 
+
 ## Machine Learning Model: 
 The team analyzed near Earth object (NEO) data, using binary classification models to predict whether an object is hazardous to the Earth, or not.  We will be analyzing and comparing our results from a decision tree model and a logistic regression model.
 
@@ -45,64 +103,7 @@ The team analyzed near Earth object (NEO) data, using binary classification mode
   ```
 The benefits of the models selected is that they are well suited to categorical output.  In our supervised machine learning we happen to have a binary classifier, 'hazardous' or 'non-hazardous', which can also be represented as 'True'('hazardous') and 'False'('non-hazardous').  One potential downfall of our model will be overfitting our data, although we resampled the data to try and resolve the issue.  Another downfall our models may face is with the limited number of features, 5 in this case.
 
----
-
-## Technology Used for the Project: 
-	- Python - Sklearn, Pandas, Tensorflow, Numpy, Matplotlib, Imblearn, Keras, Collections, AutoViz, Datetime
-	- PostGres - database 
-	- Tableau - visulization
-	_ *HTML/CSS - will review addition datasets, such as D3 - Celestial to display interesting visuals of asteroids. 
-
-
-## Team Members and Roles: 
-
-	- Triangle: Christopher Madden (Machine Learning)  
- 	- Square: Maryam Hussain and Frank Salvo (managing repository)
-	- Circle: Kathleen Yager (SQL)
-	- X: Megan Harping and Frank Salvo (what tools to use)
-
-
-## Visualization Outline:
-
-### The story we want to tell. 
-	 1. Using various predictive models we are showing what factors in our dataset most impact hazardous objects.
-		
-#### Models used: 
-		- Decision Tree
-		- Logisic Regression
-
-		We decided to use decision tree and logisitic regression models because our data had a binary classification.  The intial data was imbalanced, seeing many more values for 'non-hazardous' than for 'hazardous'.  We resampled the data using SMOTEENN combination sampling.
-
-		Visuals included in our machine learning are based in plotly. 
-
-	2. We will describe the parameters of the data in the dataset.
-
-	3. Creating visualization in Tableau, presenting using Google Docs we will create a presentation that will include images of asteroids and 		   explanation and images of our work. 
-
-## Team Goal:
-	Work with team members to sort and analyze asteroid data to find what factors lead to deciding whether or not asteroids are hazardous or nonhazardous. We hope 		to present our data using our knowledge of different databases to create visualizations, machine learning models, and linear regression.
-	
-
-## Top Five Takeaways of the Project: 
-	1. Considering multiple factors to determine if an asteroid is hazardous or not. 
-	2. Comparing factors to determine which impact hazardous classification. 
-	3. Visualizing hazardous objects in relation to earth. 
-	4. How to interpret data that is scaled for accuracy. 
-	5. Analyzing summary statistics to aid in interpretation of data. 
- 
-
-## Defining Hazardous Asteroids:
- 
-	According to NASA, Center for Near Earth Obeject Studies, near earth objects are defined as: 
-		"In terms of orbital elements, NEOs are asteroids and comets with perihelion distance q less than 1.3 au . Near-Earth Comets (NECs) are 			further restricted to include only short-period comets (i.e., orbital period P less than 200 years). The vast majority of NEOs are 				asteroids, referred to as Near-Earth Asteroids (NEAs). NEAs are divided into groups (Atira, Aten, Apollo and Amor) according to their 				perihelion distance (q), aphelion distance (Q) and their semi-major axes (a).
-
-		Potentially Hazardous Asteroids (PHAs) are currently defined based on parameters that measure the asteroid's potential to make threatening 			close approaches to the Earth. Specifically, all asteroids with an Earth Minimum Orbit Intersection Distance (MOID) of 0.05 au or less and 			an absolute magnitude (H) of 22.0 or less are considered PHAs. In other words, asteroids that can't get any closer to the Earth (i.e., 				MOID) than 0.05 au (roughly 7,480,000 km or 4,650,000 mi) or are smaller than about 140 m (~500 ft) in diameter (i.e., H = 22.0 with 				assumed albedo of 14%) are not considered PHAs.
-									~https://cneos.jpl.nasa.gov/about/neo_groups.html
-
-# NOTES: 
-
-## Work Process
-	
+## Pandas: 	
 In reviewing the data in NEO_V2.csv we discovered multiple entries for some ID's. Our review showed values in the relative_velocity and miss_distance columns vary causing multiple entries for id's. Values in other columns remain constant.
 
 Using Pandas, we separated columns into two dataframes: 
@@ -113,9 +114,11 @@ Using Pandas, we separated columns into two dataframes:
 	- 'no_duplicates_df' includes: 
 	All columns except relative_velocity and miss_distance
 
-	after splitting the data and removing duplicates from 'no_duplicates_df', we created CSV files. 
+after splitting the data and removing duplicates from 'no_duplicates_df', we created CSV files to be used in our SQL database.
 
+Our description of the data includes summary statistics on the "miss_df" dataframe. Using a loc method on the "miss_df" dataframe, we isolated the true and false values in the hazardous column. This allowed us to create boxplots on other features in the dataset.  
 
+## PostGres (SQL):
 	With CSV files created, we created two tables in PostGres:
 
 		1. vel_miss 
@@ -130,8 +133,12 @@ See image below of the first 20 rows of the SQL file.
 
 The image below shows a groupby statement created in PostGres that indicates repeat entries by id. 
 
-![Groupby_ID](https://github.com/mhhussain24/AsteroidProject/blob/main/Resources/Group_by.png)  				
-			
+![Groupby_ID](https://github.com/mhhussain24/AsteroidProject/blob/main/Resources/Group_by.png) 
+
+
+
+ 				
+		
 
 
 
