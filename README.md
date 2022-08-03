@@ -27,7 +27,19 @@ We believe this data to be reliable as it is from NASA. With 90K rows of data we
 	- X: Megan Harping and Frank Salvo (what tools to use)
 
 
-## Visualization Outline:
+## Team Goal:
+Work with team members to sort and analyze asteroid data to find what factors lead to deciding whether or not asteroids are hazardous or nonhazardous. We hope 	to present our data using our knowledge of different databases to create visualizations, machine learning models, and linear regression.
+	
+
+## Top Five Takeaways of the Project: 
+	1. Considering multiple factors to determine if an asteroid is hazardous or not. 
+	2. Comparing factors to determine which impact hazardous classification. 
+	3. Visualizing hazardous objects in relation to earth. 
+	4. How to interpret data that is scaled for accuracy. 
+	5. Analyzing summary statistics to aid in interpretation of data. 
+
+
+## Machine Learning Models: 
 
 ### The story we want to tell. 
 	 1. Using various predictive models we are showing what factors in our dataset most impact hazardous objects.
@@ -48,24 +60,25 @@ Visuals included in our machine learning are based in plotly.
 
 	3. Creating visualization in Tableau, presenting using Google Docs we will create a presentation that will include images of asteroids and 		   explanation and images of our work. 
 
-## Team Goal:
-Work with team members to sort and analyze asteroid data to find what factors lead to deciding whether or not asteroids are hazardous or nonhazardous. We hope 	to present our data using our knowledge of different databases to create visualizations, machine learning models, and linear regression.
-	
 
-## Top Five Takeaways of the Project: 
-	1. Considering multiple factors to determine if an asteroid is hazardous or not. 
-	2. Comparing factors to determine which impact hazardous classification. 
-	3. Visualizing hazardous objects in relation to earth. 
-	4. How to interpret data that is scaled for accuracy. 
-	5. Analyzing summary statistics to aid in interpretation of data. 
- 
+## Visualization:
+
+After cleaning our dataset, we used Tableau to create a story to explain the hazardous versus non-hazardous objects.The link below provides a look at our draft version of our story. 
+
+![Asteroids Dashboard](https://public.tableau.com/app/profile/megan.harpring)
+
+
+## Final Presentation Outline:
+![Asteroids!](https://docs.google.com/presentation/d/1SSr1upBPCezaDCPN7O02uU3xZ5WMtUKFsdtgQ75Xz0o/edit?usp=sharing)
 
 ## Defining Hazardous Asteroids:
  
-	According to NASA, Center for Near Earth Obeject Studies, near earth objects are defined as: 
-		"In terms of orbital elements, NEOs are asteroids and comets with perihelion distance q less than 1.3 au . Near-Earth Comets (NECs) are 			further restricted to include only short-period comets (i.e., orbital period P less than 200 years). The vast majority of NEOs are 				asteroids, referred to as Near-Earth Asteroids (NEAs). NEAs are divided into groups (Atira, Aten, Apollo and Amor) according to their 			perihelion distance (q), aphelion distance (Q) and their semi-major axes (a).
+According to NASA, Center for Near Earth Obeject Studies, near earth objects are defined as: 
+"In terms of orbital elements, NEOs are asteroids and comets with perihelion distance q less than 1.3 au . Near-Earth Comets (NECs) are 	further restricted to include only short-period comets (i.e., orbital period P less than 200 years). The vast majority of NEOs are asteroids, referred to as Near-Earth Asteroids (NEAs). NEAs are divided into groups (Atira, Aten, Apollo and Amor) according to their	perihelion distance (q), aphelion distance (Q) and their semi-major axes (a).
 
-		Potentially Hazardous Asteroids (PHAs) are currently defined based on parameters that measure the asteroid's potential to make threatening 		close approaches to the Earth. Specifically, all asteroids with an Earth Minimum Orbit Intersection Distance (MOID) of 0.05 au or less and 		an absolute magnitude (H) of 22.0 or less are considered PHAs. In other words, asteroids that can't get any closer to the Earth (i.e., 			MOID) than 0.05 au (roughly 7,480,000 km or 4,650,000 mi) or are smaller than about 140 m (~500 ft) in diameter (i.e., H = 22.0 with 			assumed albedo of 14%) are not considered PHAs.										~https://cneos.jpl.nasa.gov/about/neo_groups.html
+Potentially Hazardous Asteroids (PHAs) are currently defined based on parameters that measure the asteroid's potential to make threatening close approaches to the Earth. Specifically, all asteroids with an Earth Minimum Orbit Intersection Distance (MOID) of 0.05 au or less and an absolute magnitude (H) of 22.0 or less are considered PHAs. In other words, asteroids that can't get any closer to the Earth (i.e.,MOID) than 0.05 au (roughly 7,480,000 km or 4,650,000 mi) or are smaller than about 140 m (~500 ft) in diameter (i.e., H = 22.0 with assumed albedo of 14%) are not considered PHAs.										
+
+~https://cneos.jpl.nasa.gov/about/neo_groups.html
 
 
 # WORK Process: 
@@ -134,6 +147,21 @@ See image below of the first 20 rows of the SQL file.
 The image below shows a groupby statement created in PostGres that indicates repeat entries by id. 
 
 ![Groupby_ID](https://github.com/mhhussain24/AsteroidProject/blob/main/Resources/Group_by.png) 
+
+#### Tableau:
+We used Tableau to create various visuals of the features, specifically: 
+	- Hazardous versus non_Hazardous
+	- Absolute Magnitude to Relative Velocity (isolating hazardous objects)
+	- Absolute Magnitude to Miss Distance (isolating hazardous objects)
+
+The clean dataset also isolates year allowing us to create a visual showing counts of objects by year. This visula supports knowing if more objects are detected in more recent years. 
+
+As we worked with the data, we questioned: 
+	1. If more objects can be detected due to better technology 
+	2. If there is an increase in polution in the Universe causing more objects to be present. 
+Both questions are interesting and plausible. 
+
+ 
 
 
 
