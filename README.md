@@ -69,7 +69,7 @@ After cleaning our dataset, we used Tableau to create a story to explain the haz
 
 
 ## Final Presentation Outline:
-![Asteroids!](https://docs.google.com/presentation/d/1SSr1upBPCezaDCPN7O02uU3xZ5WMtUKFsdtgQ75Xz0o/edit?usp=sharing)
+![Asteroids!]([https://docs.google.com/presentation/d/1SSr1upBPCezaDCPN7O02uU3xZ5WMtUKFsdtgQ75Xz0o/edit?usp=sharing])
 
 ## Defining Hazardous Asteroids:
  
