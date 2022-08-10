@@ -65,7 +65,7 @@ Visuals included in our machine learning are based in plotly.
 
 After cleaning our dataset, we used Tableau to create a story to explain the hazardous versus non-hazardous objects.The link below provides a look at our draft version of our story. 
 
-[Link to Asteroids Dashboard](https://public.tableau.com/app/profile/megan.harpring/viz/NearEarthObjects_16595746214520/Dashboard1?publish=yes)
+[Link to Asteroids Dashboard](https://public.tableau.com/app/profile/megan.harpring/viz/NearEarthObjectsWor/NearEarthObjects?publish=yes)
 
 
 ## Final Presentation Outline:
